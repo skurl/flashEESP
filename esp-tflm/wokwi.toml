@@ -1,0 +1,8 @@
+[wokwi]
+version = 1
+firmware = "build-wokwi/merged.bin"
+elf = "build-wokwi/flashee_tflm.elf"
+
+[[net.forward]]
+from = "localhost:5000"
+to = "target:5000"

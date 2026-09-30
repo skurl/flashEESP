@@ -1,0 +1,12 @@
+wifi_secrets.h
+build/
+build-*/
+.venv/
+__pycache__/
+managed_components/
+# generated
+flashee_float.tflite
+flashee_host
+sdkconfig
+sdkconfig.old
+sdkconfig.wokwi
