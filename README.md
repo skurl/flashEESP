@@ -1,6 +1,6 @@
 # EmbeddedFlashEE
 
-[flashEE](https://github.com/skurl/flashee) running on an ESP32-S3-DevKitC-1 N16R8. Send it a protein sequence over USB or WiFi, get a 320-d embedding back.
+[flashEE](https://github.com/skurl/flashee) running on an ESP32-S3-DevKitC-1 N16R8. Send a protein sequence over USB or WiFi, get a 320-d embedding back.
 
 # Video Overview
 
@@ -8,9 +8,9 @@
 
 # Deployment
 
-Plug the board in (the **COM** port), with [ESP-IDF v5.3](https://docs.espressif.com/projects/esp-idf/en/v5.3/esp32s3/get-started/) installed.
+Plug the board in (the COM port), with [ESP-IDF v5.3](https://docs.espressif.com/projects/esp-idf/en/v5.3/esp32s3/get-started/) installed.
 
-Add your WiFi (2.4 GHz), then flash firmware + model:
+Add your WiFi, then flash firmware + model:
 
 ```bash
 cp esp-tflm/main/wifi_secrets.h.example esp-tflm/main/wifi_secrets.h   # fill in SSID/password
@@ -42,3 +42,10 @@ Not much.
 # Is it accurate?
 
 Pretty much lossless. Using cosine similarity, the boards embeddings using int8 weigths matches fp32 at 0.980–0.998 across different length proteins.
+
+
+# Acknowledgements
+
+Thank you Anthropic for providing free access to Claude models as part of the iGEM competition.
+
+Maciej Robert Szczesny 2026
